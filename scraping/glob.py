@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas
 import requests
 from bs4 import BeautifulSoup as bs
 import datetime
@@ -8,8 +8,6 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 
 def upload_drive():
-    gauth = GoogleAuth()
-    drive = GoogleDrive(gauth)
 
     url_beef = 'https://globus-online.kg/catalog/myaso_ptitsa_ryba/govyadina_baranina_farshi/myaso_govyadina_steyk/'
     response_beef = requests.get(url_beef)
@@ -26,10 +24,6 @@ def upload_drive():
     url_trout = 'https://globus-online.kg/catalog/myaso_ptitsa_ryba/ryba_i_moreprodukty/ryba_forel_nepotroshennaya_okhlazhdennaya_ves/'
     response_trout = requests.get(url_trout)
     soup_trout = bs(response_trout.text, 'html.parser')
-
-    url_milk = 'https://globus-online.kg/catalog/molochnye_produkty_yaytsa/moloko_slivki/moloko_umut_i_k_3_2_1l_t_p/'
-    response_milk = requests.get(url_milk)
-    soup_milk = bs(response_milk.text, 'html.parser')
 
     url_milk = 'https://globus-online.kg/catalog/molochnye_produkty_yaytsa/moloko_slivki/moloko_umut_i_k_3_2_1l_t_p/'
     response_milk = requests.get(url_milk)
@@ -115,6 +109,93 @@ def upload_drive():
     response_oil = requests.get(url_oil)
     soup_oil = bs(response_oil.text, 'html.parser')
 
+    beef = soup_beef.find('span', class_='pagetitle__inner').text
+    price_beef = int(soup_beef.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    lamb = soup_lamb.find('span', class_='pagetitle__inner').text
+    price_lamb = int(soup_lamb.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    chicken = soup_chicken.find('span', class_='pagetitle__inner').text
+    price_chicken = int(soup_chicken.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    trout = soup_trout.find('span', class_='pagetitle__inner').text
+    price_trout = int(soup_trout.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    milk = soup_milk.find('span', class_='pagetitle__inner').text
+    price_milk = int(soup_milk.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    kefir = soup_kefir.find('span', class_='pagetitle__inner').text
+    price_kefir = int(soup_kefir.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    tvorog = soup_tvorog.find('span', class_='pagetitle__inner').text
+    price_tvorog = int(soup_tvorog.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    butter = soup_butter.find('span', class_='pagetitle__inner').text
+    price_butter = int(soup_butter.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    eggs = soup_eggs.find('span', class_='pagetitle__inner').text
+    price_eggs = int(soup_eggs.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    bread = soup_bread.find('span', class_='pagetitle__inner').text
+    price_bread = int(soup_bread.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    lepeshka = soup_lepeshka.find('span', class_='pagetitle__inner').text
+    price_lepeshka = int(soup_lepeshka.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    rice = soup_rice.find('span', class_='pagetitle__inner').text
+    price_rice = int(soup_rice.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    buckwheat = soup_buckwheat.find('span', class_='pagetitle__inner').text
+    price_buckwheat = int(soup_buckwheat.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    cucumber = soup_cucumber.find('span', class_='pagetitle__inner').text
+    price_cucumber = int(soup_cucumber.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    tomato = soup_tomato.find('span', class_='pagetitle__inner').text
+    price_tomato = int(soup_tomato.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    onion = soup_onion.find('span', class_='pagetitle__inner').text
+    price_onion = int(soup_onion.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    potato = soup_beef.find('span', class_='pagetitle__inner').text
+    price_beef = int(soup_beef.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    carrot = soup_carrot.find('span', class_='pagetitle__inner').text
+    price_carrot = int(soup_carrot.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    garlic = soup_garlic.find('span', class_='pagetitle__inner').text
+    price_garlic = int(soup_garlic.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    cabbage = soup_cabbage.find('span', class_='pagetitle__inner').text
+    price_cabbage = int(soup_cabbage.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    banana = soup_banana.find('span', class_='pagetitle__inner').text
+    price_banana = int(soup_banana.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    tea = soup_tea.find('span', class_='pagetitle__inner').text
+    price_tea = int(soup_tea.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    salt = soup_salt.find('span', class_='pagetitle__inner').text
+    price_salt = int(soup_salt.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    sugar = soup_sugar.find('span', class_='pagetitle__inner').text
+    price_sugar = int(soup_sugar.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    oil = soup_oil.find('span', class_='pagetitle__inner').text
+    price_oil = int(soup_oil.find('span', class_='c-prices__value js-prices_pdv_ГЛОБУС Розничная').text[:3])
+
+    links = []
+    links.append([url_beef, url_lamb, url_chicken, url_trout, url_milk, url_kefir, url_tvorog, url_butter, url_eggs,
+                  url_bread, url_lepeshka, url_rice, url_buckwheat, url_cucumber, url_tomato, url_onion, url_potato,
+                  url_carrot, url_garlic, url_cabbage, url_banana, url_tea, url_salt, url_sugar, url_oil])
+
+    date = []
+    date_collected = datetime.datetime.now()
+    date_string = date_collected.strftime("%d-%m-%Y")
+
+    #extend two lists
+
+
     prod_beef = soup_beef.find('span', class_='pagetitle__inner')
     prod_beef_list = [pb.text for pb in prod_beef]
 
@@ -152,7 +233,7 @@ def upload_drive():
     print('Файл загружен!')
 
 if __name__ == '__main__':
-    schedule.every(5).seconds.do(upload_drive)
+    schedule.every().thursday.do(upload_drive)
 
     while True:
         schedule.run_pending()

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "glo-data-360115",
+  "private_key_id": "0b35385f655d60451f829eb94a2b637bd977230b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEVlaIq877rzRw\nZS/GItGOiYk+SU95JHtlUXGfeI23708IMbtpDzSXvcx9PxWPbpp/08bCds8NP+aK\npkWyFKCLEDjT3SBUVP9d8pilGfi84AubyjzOcNl9f/cMlgz/SKbQpLa5Dm3SKCt1\nOhQYAccHhTeXAKGAUdXAdh7kr0MB2YR9sillnq27MsjutpvKOENRc0a1H0WlsA2K\nHaVZr+4boc3P9ekNbSXNtLDNHPLyWcxfirZ9CZi0ixfMdjmio86p046/6owP1l8x\nOdq7eiVs8N+HG6NCGgbKK4livy1IkxDUo61JUEBmq2f4rDgTykj1CNoNyK/7CARH\n/QxJkj7JAgMBAAECggEADwDaWH5+kO5CJ4OdULqzllJCxgXOov8rcczf41Pln9m+\nSZiZTcLfHehfrRjUwjLtb1lk2H1BPxiJZWzQKcwDOlU+mSFjpCYhpJF9DNgiUUvy\nqdCcxcQgY+4ogrz1rc1kt/rE9CPFjHghiAdXO+q+MEAub7rZMefZryfSSQnuk4Bj\n+g8o28mjSmHDDMUy5LbobD9AQXSnFUJl+CL2zZee+SSR17eTSiMPVAtEfbQywg11\nDOArlA3KOM/n2GLL3bGyLwP2DSvSWNC3KtiSZjgfuK4EmwfI/1bX2ryNrtuGpjdR\nyY3jpJeumqaXzi4ptxb0wopmG1+UF+dKueZ92zOkbQKBgQD93YosjH7ULGlSvcZW\n3f3OyKgep8kLEo0Ata0UiaTSZWrksRahpuHtyWUXbw/vWyREvKLBJjtqUdmVtSXb\nnzE5Uiyp/aamo/3iK8harCUpC7iG9XmoBUxJoLU6qp1IVGun2F12pgbU+4jA+GFy\ntUVWY84/gocO99CQbmyyOvIzPQKBgQDF/PcwBgkTys341kPTMOon1VZSxXmKV/gy\npGJgCzhJ09OH3AK3NpPvpGJiB7DvwudH6yhgiattuA6fiFTZMsH/BV8CuVFRXIHb\nrLihWiu9zzMb4Jflpq80FAKlUzzCq+JVVUCGanqSWUFpAvoz2/g4eYck9uIMue2/\nWVD6jBfCfQKBgQC42GGulFIY3YmG9KWBRLx0n4hCYfsx87z1glNXO+3mQHA3unX3\nGFMzV8wi5vxcVSmwXwXGy7bBcH2U00SQiHZH/XyF/iok9g17bFPDKcsY+u7OXdjK\nLalhhwHOiMJjEw0cNp+/L56T396wW2phInotMBjSB5GdpXWYZL8Ce4c1JQKBgAVo\nWWAIaisOOP347DVSerLH0unD1wP+Txsi/kTdSZZKoNZvHevfI79B4CYJS73gtuxx\n8dJhMDt48X1N/fNIvZ+3h9bNNPlh63ISj6BolBVFGYJDaiKtoM9tVH0rftdaVn46\nK97//YUNxwmVOTw9X9Q7DYPm8lmiomm9iMavGN8JAoGAQBjMfJdXznsX4EeC87A7\nM6L11xdt//czvVXyorPkKbq08CTQRduenJThS+YtxV4YAPmQv0oVgxrzChZm8Mti\nJ/odkD1Cfi6MbFlhvJcTQip/LVgAYZhtLmQm69fDpQyBLaATqsw4/wavZbxJwUly\ns9TIZ68UajCVjYrqDqQjprI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "scraperglo@glo-data-360115.iam.gserviceaccount.com",
+  "client_id": "100430989202504529345",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scraperglo%40glo-data-360115.iam.gserviceaccount.com"
+}

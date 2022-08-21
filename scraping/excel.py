@@ -20,4 +20,4 @@ for case in cases:
 print(data)
 df = pd.DataFrame({"CovidData for Kyrgyzstan": data})
 df.index = ['Total cases', 'Deaths', 'Recovered']
-df.to_csv('covidCases_Kyrgyzstan')
+df.to_csv('covidCases_Kyrgyzstan.csv')
