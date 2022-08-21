@@ -5,15 +5,6 @@ import datetime
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-scope = ['https://www.googleapis.com/auth/spreadsheets',
-         "https://www.googleapis.com/auth/drive"]
-
-credentials = ServiceAccountCredentials.from_json_keyfile_name('glo-data-360115-0b35385f655d.json', scope)
-client = gspread.authorize(credentials)
-
-
-#sheet = client.create("globus-products")
-#sheet.share('mambetova.altynai@gmail.com', perm_type='user', role='writer')
 
 products = []
 price = []
